@@ -79,3 +79,41 @@ public class Main {
   }
 }
 ```
+
+## Pelindrome a string (Java)
+```
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      String str = "racecar";
+      
+      // String str2 = "";
+      // char ch = '\0';
+      
+      // for(int i=0; i<str.length(); i++){
+      //   ch = str.charAt(i);
+      //   str2 = ch + str2;
+      // }
+      
+      // if(str.equals(str2)){
+      //   System.out.print("It's a palindrome");
+      // }else{
+      //   System.out.print("It's not a palindrome");
+      // }
+      
+      int left = 0;
+      int right = str.length() - 1;
+      
+      while(left <= right){
+        if(str.charAt(left) != str.charAt(right)){
+          System.out.println("It's not a palindrom");
+          return;
+        }
+          left++;
+          right--;
+      }
+      System.out.print("It's a palindrom");
+  }
+}
+```
