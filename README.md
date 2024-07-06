@@ -1,3 +1,4 @@
+
 # Dsa-Java+JS-Sheet
 ```
 Emphasis and Lists:
@@ -46,4 +47,14 @@ GitHub supports some additional features such as @mentions, issue and pull reque
 Emoji:
 You can use emoji in your README to add some personality and context. For example, :smile: or :rocket:.
 
+```
+---
+## Short A String
+```
+const str = "sHoRt AnD sToUt";
+const a1 = str.toLowerCase().split(" ");
+for(let i=0; i<a1.length ; i++){
+  a1[i]= a1[i].charAt(0).toUpperCase() + a1[i].slice(1);
+}
+  console.log("charIndex", a1.join(" "))
 ```
