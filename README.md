@@ -49,7 +49,7 @@ You can use emoji in your README to add some personality and context. For exampl
 
 ```
 ---
-## Short A String
+## Capitalize the first char of each word of a String (JS)
 ```
 const str = "sHoRt AnD sToUt";
 const a1 = str.toLowerCase().split(" ");
@@ -57,4 +57,25 @@ for(let i=0; i<a1.length ; i++){
   a1[i]= a1[i].charAt(0).toUpperCase() + a1[i].slice(1);
 }
   console.log("charIndex", a1.join(" "))
+```
+
+---
+## Reverse a string (Java)
+```
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      String str = "Hello";
+      
+      String str2 = "";
+      char ch = '\0';
+      
+      for(int i=0; i<str.length(); i++){
+        ch = str.charAt(i);
+        str2 = ch + str2;
+      }
+      System.out.print(str2);
+  }
+}
 ```
