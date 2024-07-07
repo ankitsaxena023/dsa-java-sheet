@@ -61,6 +61,9 @@ for(let i=0; i<a1.length ; i++){
 
 ---
 ## Reverse a string (Java)
+
+### Notes : for initialize character we use '\0', eg:  char ch = '\0';
+
 ```
 import java.util.*;
 
@@ -117,3 +120,36 @@ public class Main {
   }
 }
 ```
+
+
+---
+## Array Intersection
+```
+function arrayIntersection(arr1, arr2) {
+  const set1 = new Set(arr1);
+  const intersection = [];
+
+  for (let num of arr2) {
+    if (set1.has(num)) {
+      intersection.push(num);
+    }
+  }
+
+  return intersection;
+}
+
+console.log(arrayIntersection([1, 2, 3, 4, 5], [3, 4, 5, 6, 7]))
+```
+```
+function arrayIntersection(arr1, arr2) {
+  let arr3 = [];
+  for(let i=0; i<arr1.length; i++){
+    if(arr2.includes(arr1[i])){
+      arr3.push(arr1[i]);
+    }
+  }
+  return arr3;
+}
+```
+
+---
