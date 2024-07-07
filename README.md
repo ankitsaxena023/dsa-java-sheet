@@ -154,8 +154,6 @@ function arrayIntersection(arr1, arr2) {
 ```
 
 ---
-
----
 ## Remove Duplicate
 ```
 function removeDuplicates(arr) {
@@ -195,7 +193,6 @@ const result = removeDuplicates([
 
 console.log(result);
 ```
----
 
 ---
 ## FizzBuzz Array
