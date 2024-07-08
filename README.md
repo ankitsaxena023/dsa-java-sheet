@@ -263,3 +263,44 @@ public class Main {
   }
 }
 ```
+---
+## Find sqaure root of given number
+```
+import java.util.*;
+
+public class Main {
+    public static int squareRoot(int target){
+      int left = 0;
+      int right = target;
+      
+      
+      while(left <= right){
+        int mid = left  + (right - left)/ 2;
+    
+        if(mid*mid == target){
+          return mid;
+        }else if(mid*mid < target){
+          left = mid + 1;
+        }else{
+          right = mid - 1;
+        }
+      }
+      return -1;
+    }  
+  
+    public static void main(String[] args) {
+      
+      int target = 81;
+      
+      int result = squareRoot(target);
+      System.out.println("result "+result);
+      
+      if(result != -1){
+        System.out.println("target is square root of  "+result);
+      }else{
+        System.out.println("target is not sqaure root of anything");
+      }
+      
+  }
+}
+```
