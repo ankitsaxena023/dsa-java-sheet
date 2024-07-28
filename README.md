@@ -304,3 +304,52 @@ public class Main {
   }
 }
 ```
+
+---
+## LinkedList - Insert an element in LinkedList at the beginning and delete it from the beginning
+```
+class LinkedList{
+    Node head;
+    
+    // Creating a node
+    class Node{
+        int data;
+        Node next;
+        Node(int data){
+            this.data = data;
+            next = null;
+        }
+        
+    }
+    
+    public Node insertNode(int data){
+        Node node = new Node(data);
+        node.next = head;
+        head = node;
+        return head;
+    }
+public void display(){
+        Node temp = head;
+        while(temp != null){
+            System.out.print(temp.data+ " ");
+            temp = temp.next;
+        }
+        
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+		LinkedList ll = new LinkedList();
+    	 ll.insertNode(2);
+    	 ll.insertNode(23);
+    	 ll.insertNode(299);
+    	 ll.display();
+    	 System.out.println("-----");
+    	 ll.deleteBegin();
+    	 ll.display();
+
+	}
+}
+izz-scsv-min
+```
